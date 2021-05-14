@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mysql_dev:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=nnc-api-plus
+      - MYSQL_DATABASE=nnc-api-plus
+      - MYSQL_USER=nnc-api-plus
+      - MYSQL_PASSWORD=nnc-api-plus
+    expose:
+      - '6603'
+    ports:
+      - '6603:3306'
